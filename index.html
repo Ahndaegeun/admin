@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div class="body__container">
+
+    <header>
+        <div class="header__top">
+            <h1>ADMINISTRATOR</h1>
+            <ul>
+                <li><a href="#">관리자 정보</a></li>
+                <li><a href="#">로그아웃</a></li>
+            </ul>
+        </div>
+        <nav aria-label='primary'>
+            <ul>
+                <li></li>
+                <li><a href="#">환경설정</a></li>
+                <li><a href="#">회원관리</a></li>
+                <li><a href="#">게시판관리</a></li>
+                <li><a href="#">쇼핑몰관리</a></li>
+                <li><a href="#">쇼핑몰현황/기타</a></li>
+                <li><a href="#">SMS 관리</a></li>
+                <li></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <nav aria-label='secondary'>
+            <ul>
+                <li><a href="#">게시판관리</a></li>
+                <li><a href="#">게시판그룹관리</a></li>
+                <li><a href="#">인기검색어관리</a></li>
+                <li><a href="#">인기검색어순위</a></li>
+                <li><a href="#">1:1문의설정</a></li>
+                <li><a href="#">내용관리</a></li>
+                <li><a href="#">FAQ관리</a></li>
+                <li><a href="#">글,댓글 현황</a></li>
+            </ul>
+        </nav>
+        <section>
+
+            <div class="section__title">
+                <h2>HOME</h2>
+                <span>></span>
+                <p>게시판관리</p>
+            </div>
+
+            <div class="section__sub-title">
+                <span>전체목록</span>
+                <span>생성된 게시판수 12개</span>
+            </div>
+
+            <form action="/" method="POST">
+                <input type="text" list="dep-list" placeholder="TABLE">
+                <datalist id="dep-list">
+                    <option value="TABLE"></option>
+                    <option value="COMPANY"></option>
+                    <option value="Portfolio"></option>
+                </datalist>
+                <input type="search">
+                <button type="button">검색</button>
+            </form>
+
+            <section>
+                <button class="add-btn">게시판 추가</button>
+
+                <div class="grid-container">
+                    <ul class="grid-head">
+                        <li><input type="checkbox"></li>
+                        <li>그룹</li>
+                        <li>TABLE</li>
+                        <li>스킨</li>
+                        <li>모바일스킨</li>
+                        <li>제목</li>
+                        <li>읽기</li>
+                        <li>쓰기</li>
+                        <li>댓글</li>
+                        <li>다운</li>
+                        <li>SNS사용</li>
+                        <li>검색사용</li>
+                        <li>출력순서</li>
+                        <li>접속기기</li>
+                        <li>관리</li>
+                    </ul>
+                    <ul class="grid-item">
+                        <li><input type="checkbox"></li>
+                        <li><input type="text" list="dep-list"></li>
+                        <li>notice</li>
+                        <li><input type="text" list="skin-list"></li>
+                        <li><input type="text" list="mobile-skin-list"></li>
+                        <li><input type="text"></li>
+                        <li><input type="number" min="0" max="100"></li>
+                        <li><input type="number" min="0" max="100"></li>
+                        <li><input type="number" min="0" max="100"></li>
+                        <li><input type="number" min="0" max="100"></li>
+                        <li><input type="checkbox"></li>
+                        <li><input type="checkbox"></li>
+                        <li><input type="number" min="0" max="100"></li>
+                        <li><input type="text" list="dvice-list"></li>
+                        <li>
+                            <a href="#">수정</a>
+                            <a href="#">복사</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="btn-group">
+                    <button class="update-btn">선택수정</button>
+                    <button class="delete-btn">선택삭제</button>
+                </div>
+            </section>
+
+        </section>
+    </main>
+    
+</div>
+</body>
+</html>
