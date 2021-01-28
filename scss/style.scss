@@ -1,6 +1,7 @@
 .body__container {
     overflow: hidden;
     height: 100vh;
+    width: 1920px;
     header {
         width: 100%;
         .header__top {
@@ -112,18 +113,156 @@
                 }
             }
             section {
-                background: gray;
+                display: flex;
+                flex-direction: column;
                 button {
                     width: 10rem;
                     background: #383B4F;
                     color: white;
-                    padding: .3rem .5rem;
+                    padding: .8rem .5rem;
+                    align-self: flex-end;
+                    margin-bottom: 2rem;
                 }
                 .grid-container {
-                    overflow: scroll;
+                    overflow-y: scroll;
+                    height: 60rem;
+                    margin-bottom: 2rem;
                     .grid-head {
                         display: grid;
                         grid-template-columns: 1fr repeat(5, 3fr) repeat(7, 1fr) repeat(2, 2fr);
+                        margin-bottom: .5rem;
+                        justify-items: center;
+                        align-items: center;
+                        li {
+                            width: 100%;
+                            height: 100%;
+                            border: 1px solid gray;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                    .grid-item {
+                        display: grid;
+                        grid-template-columns: 1fr repeat(5, 3fr) repeat(7, 1fr) repeat(2, 2fr);
+                        margin-bottom: .5rem;
+                        justify-items: center;
+                        align-items: center;
+                        li {
+                            width: 100%;
+                            height: 100%;
+                            border: 1px solid gray;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: .1rem;
+                            overflow: hidden;
+                            &:nth-child(1) {
+                                width: 100%;
+                                & input {
+                                    width: 30px;
+                                }
+                            }
+
+                            &:nth-child(2) {
+                                width: 100%;
+                                & input {
+                                    width: 160px;
+                                }
+                            }
+
+                            &:nth-child(3) {
+                                width: 100%;
+                                & input {
+                                    width: 30px;
+                                }
+                            }
+
+                            &:nth-child(4) {
+                                width: 100%;
+                                & input {
+                                    width: 160px;
+                                }
+                            }
+
+                            &:nth-child(5) {
+                                width: 100%;
+                                & input {
+                                    width: 160px;
+                                }
+                            }
+
+                            &:nth-child(6) {
+                                width: 100%;
+                                & input {
+                                    width: 160px;
+                                }
+                            }
+
+                            &:nth-child(7) {
+                                width: 100%;
+                                & input {
+                                    width: 30px;
+                                }
+                            }
+
+                            &:nth-child(8) {
+                                width: 100%;
+                                & input {
+                                    width: 30px;
+                                }
+                            }
+
+                            &:nth-child(9) {
+                                width: 100%;
+                                & input {
+                                    width: 30px;
+                                }
+                            }
+
+                            &:nth-child(10) {
+                                width: 100%;
+                                & input {
+                                    width: 30px;
+                                }
+                            }
+
+                            &:nth-child(11) {
+                                width: 100%;
+                                & input {
+                                    width: 30px;
+                                }
+                            }
+
+                            &:nth-child(12) {
+                                width: 100%;
+                                & input {
+                                    width: 30px;
+                                }
+                            }
+
+                            &:nth-child(13) {
+                                width: 100%;
+                                & input {
+                                    width: 30px;
+                                }
+                            }
+
+                            &:nth-child(14) {
+                                width: 100%;
+                                & input {
+                                    width: 100px;
+                                }
+                            }
+
+                            &:nth-child(15) {
+                                width: 100%;
+                                & input {
+                                    width: 30px;
+                                }
+                            }
+
+                        }
                     }
                 }
             }
